@@ -49,6 +49,7 @@ struct SampleData {
         SampleItem(name: "TAB页面", destination: TabPageDemoView()),
         SampleItem(name: "底部导航栏页面框架", destination: BottomTabDemoView()),
         SampleItem(name: "顶部TAB页面框架", destination: SegmentedViewDemo()),
+        SampleItem(name: "抽屉页面框架", destination: DrawerLayoutDemoView()),
         SampleItem(name: "全屏页面", destination: ImmersiveView()),
         SampleItem(name: "软键盘", destination: KeyboardDemoView()),
         SampleItem(name: "列表", destination: ListSampleView()),

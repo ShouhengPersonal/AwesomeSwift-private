@@ -116,6 +116,8 @@
 		B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50099D577C029A65A007F832 /* Pods_AwesomeSwift.framework */; };
 		F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898832C0448790056DB4E /* HeatmapView.swift */; };
 		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
+		F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898872C047C2B0056DB4E /* DrawerLayout.swift */; };
+		F2F8988A2C04824E0056DB4E /* DrawerLayoutDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898892C04824E0056DB4E /* DrawerLayoutDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +273,8 @@
 		D97B031A2C8DA6B18B475D85 /* Pods-AwesomeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F2F898832C0448790056DB4E /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
 		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
+		F2F898872C047C2B0056DB4E /* DrawerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayout.swift; sourceTree = "<group>"; };
+		F2F898892C04824E0056DB4E /* DrawerLayoutDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayoutDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +448,8 @@
 				9D92EFE9293B18A300061967 /* AlertDemoView.swift */,
 				F2F898832C0448790056DB4E /* HeatmapView.swift */,
 				F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */,
+				F2F898872C047C2B0056DB4E /* DrawerLayout.swift */,
+				F2F898892C04824E0056DB4E /* DrawerLayoutDemoView.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -975,6 +981,7 @@
 				9DB8A3892935C6A3003DAC4A /* DocumentPicker.swift in Sources */,
 				9D92EFE8293B185400061967 /* ActivityIndicator.swift in Sources */,
 				9D4D228729102713006E0075 /* AwesomeSwiftApp.swift in Sources */,
+				F2F8988A2C04824E0056DB4E /* DrawerLayoutDemoView.swift in Sources */,
 				9DA605A82920F71100EFFA1D /* UserDefaultsDemoView.swift in Sources */,
 				9DA6059D291F4F1300EFFA1D /* OptionListView.swift in Sources */,
 				9DB8A38B2935C732003DAC4A /* DocumentPickerDemoView.swift in Sources */,
@@ -1024,6 +1031,7 @@
 				9DE65CB529164C1D00804F13 /* ImageDemoView.swift in Sources */,
 				9DA605A52920F17700EFFA1D /* AppPermisions.swift in Sources */,
 				F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */,
+				F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */,
 				9DE65CB729164C1D00804F13 /* BottomTabDemoView.swift in Sources */,
 				9D6436FD292E51090074261A /* ThemeDemoView.swift in Sources */,
 				9D6436FB292C7CBA0074261A /* LottieView.swift in Sources */,
