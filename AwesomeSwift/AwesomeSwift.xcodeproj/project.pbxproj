@@ -114,6 +114,8 @@
 		9DE65CC22917F38800804F13 /* KeyboardAwareDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65CC12917F38800804F13 /* KeyboardAwareDemoView.swift */; };
 		9DE65CC42918096A00804F13 /* KeyboardAwareDemoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */; };
 		B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50099D577C029A65A007F832 /* Pods_AwesomeSwift.framework */; };
+		F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898832C0448790056DB4E /* HeatmapView.swift */; };
+		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +269,8 @@
 		9DE65CC12917F38800804F13 /* KeyboardAwareDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView.swift; sourceTree = "<group>"; };
 		9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView2.swift; sourceTree = "<group>"; };
 		D97B031A2C8DA6B18B475D85 /* Pods-AwesomeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		F2F898832C0448790056DB4E /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
+		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +442,8 @@
 				9DE65CA529164C1C00804F13 /* LayoutDemoView.swift */,
 				9DE65CA829164C1D00804F13 /* PopupDemoView.swift */,
 				9D92EFE9293B18A300061967 /* AlertDemoView.swift */,
+				F2F898832C0448790056DB4E /* HeatmapView.swift */,
+				F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -1017,6 +1023,7 @@
 				9D6437112930BD510074261A /* ChangeIconDemoView.swift in Sources */,
 				9DE65CB529164C1D00804F13 /* ImageDemoView.swift in Sources */,
 				9DA605A52920F17700EFFA1D /* AppPermisions.swift in Sources */,
+				F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */,
 				9DE65CB729164C1D00804F13 /* BottomTabDemoView.swift in Sources */,
 				9D6436FD292E51090074261A /* ThemeDemoView.swift in Sources */,
 				9D6436FB292C7CBA0074261A /* LottieView.swift in Sources */,
@@ -1029,6 +1036,7 @@
 				9D4D229329102714006E0075 /* AwesomeSwift.xcdatamodeld in Sources */,
 				9DA605AE29213EC700EFFA1D /* SwipeListView.swift in Sources */,
 				9DE65CBC29164C1D00804F13 /* TabPageDemoView.swift in Sources */,
+				F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */,
 				9D71C8942AA625260049CDDD /* Sample.swift in Sources */,
 				9DA605AC2920FBF600EFFA1D /* AppInfoUtils.swift in Sources */,
 			);
