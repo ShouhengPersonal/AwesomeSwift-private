@@ -118,6 +118,7 @@
 		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
 		F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898872C047C2B0056DB4E /* DrawerLayout.swift */; };
 		F2F8988A2C04824E0056DB4E /* DrawerLayoutDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898892C04824E0056DB4E /* DrawerLayoutDemoView.swift */; };
+		F2F8988C2C04BFE90056DB4E /* KeyboardDemoView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8988B2C04BFE90056DB4E /* KeyboardDemoView4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,6 +276,7 @@
 		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
 		F2F898872C047C2B0056DB4E /* DrawerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayout.swift; sourceTree = "<group>"; };
 		F2F898892C04824E0056DB4E /* DrawerLayoutDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayoutDemoView.swift; sourceTree = "<group>"; };
+		F2F8988B2C04BFE90056DB4E /* KeyboardDemoView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDemoView4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +632,7 @@
 				9DDD6911291BFF5600E2CB69 /* KeyboardAwareDemo3.swift */,
 				9DDD690F291BFD4F00E2CB69 /* KeyboardDemoView.swift */,
 				9DDD6906291B897900E2CB69 /* KeyboardReadable.swift */,
+				F2F8988B2C04BFE90056DB4E /* KeyboardDemoView4.swift */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -1031,6 +1034,7 @@
 				9DE65CB529164C1D00804F13 /* ImageDemoView.swift in Sources */,
 				9DA605A52920F17700EFFA1D /* AppPermisions.swift in Sources */,
 				F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */,
+				F2F8988C2C04BFE90056DB4E /* KeyboardDemoView4.swift in Sources */,
 				F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */,
 				9DE65CB729164C1D00804F13 /* BottomTabDemoView.swift in Sources */,
 				9D6436FD292E51090074261A /* ThemeDemoView.swift in Sources */,

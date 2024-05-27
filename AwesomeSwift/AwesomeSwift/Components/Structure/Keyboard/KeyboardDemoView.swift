@@ -31,6 +31,16 @@ struct KeyboardDemoView: View {
             }, label: {
                 Text("Keyboard Aware Demo 3")
             }).frame(height: 40)
+            
+            NavigationLink(destination: {
+                if #available(iOS 15.0, *) {
+                    KeyboardDemoView4()
+                } else {
+                    Text("Only available on 15.0 and newer")
+                }
+            }, label: {
+                Text("Keyboard Aware Demo 4")
+            }).frame(height: 40)
         }.navigationBarTitleDisplayMode(.inline)
     }
 }
