@@ -34,7 +34,6 @@
 		9D71C89B2AA760960049CDDD /* GestureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D71C89A2AA760960049CDDD /* GestureDemoView.swift */; };
 		9D71C89F2AA8B4D80049CDDD /* WebDAVDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D71C89E2AA8B4D80049CDDD /* WebDAVDemoView.swift */; };
 		9D87B0A22934BD0D0072B307 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D87B0A12934BD0C0072B307 /* GoogleService-Info.plist */; };
-		9D87B0A52934C8270072B307 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9D87B0A42934C8270072B307 /* FirebaseCrashlytics */; };
 		9D87B0A92934D3860072B307 /* SqlLiteDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87B0A82934D3860072B307 /* SqlLiteDemoView.swift */; };
 		9D87B0AC2934D3D00072B307 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87B0AB2934D3D00072B307 /* TaskDataStore.swift */; };
 		9D87B0AE2934F6010072B307 /* ImagePickDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87B0AD2934F6010072B307 /* ImagePickDemoView.swift */; };
@@ -116,6 +115,7 @@
 		B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50099D577C029A65A007F832 /* Pods_AwesomeSwift.framework */; };
 		F226C2B32C05B62900B67CA5 /* MarkdownRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */; };
 		F226C3552C05C10C00B67CA5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = F226C3542C05C10C00B67CA5 /* Ink */; };
+		F226C3572C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
@@ -278,6 +278,7 @@
 		9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView2.swift; sourceTree = "<group>"; };
 		D97B031A2C8DA6B18B475D85 /* Pods-AwesomeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderView.swift; sourceTree = "<group>"; };
+		F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextViewDemo.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
@@ -293,7 +294,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D87B0A52934C8270072B307 /* FirebaseCrashlytics in Frameworks */,
 				F226C3552C05C10C00B67CA5 /* Ink in Frameworks */,
 				9DE65C7A291512FA00804F13 /* WhatsNewKit in Frameworks */,
 				B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */,
@@ -720,6 +720,7 @@
 				F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */,
 				F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */,
 				F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */,
+				F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -748,7 +749,6 @@
 			name = AwesomeSwift;
 			packageProductDependencies = (
 				9DE65C79291512FA00804F13 /* WhatsNewKit */,
-				9D87B0A42934C8270072B307 /* FirebaseCrashlytics */,
 				F226C3542C05C10C00B67CA5 /* Ink */,
 			);
 			productName = AwesomeSwift;
@@ -846,7 +846,6 @@
 			mainGroup = 9D4D227A29102712006E0075;
 			packageReferences = (
 				9DE65C78291512FA00804F13 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
-				9D87B0A32934C8270072B307 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				F226C3532C05C04C00B67CA5 /* XCLocalSwiftPackageReference "../../Ink" */,
 			);
 			productRefGroup = 9D4D228429102713006E0075 /* Products */;
@@ -1038,6 +1037,7 @@
 				9DB8A3972937AED2003DAC4A /* ScannerDemoView.swift in Sources */,
 				9DE65CC02917E94D00804F13 /* ImmersiveView.swift in Sources */,
 				9DE65C7C29156FDD00804F13 /* WhatsNewKitView.swift in Sources */,
+				F226C3572C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift in Sources */,
 				F226C2B32C05B62900B67CA5 /* MarkdownRenderView.swift in Sources */,
 				9D643701292E6BF20074261A /* LaunchPhonePageDemo.swift in Sources */,
 				F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */,
@@ -1524,14 +1524,6 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9D87B0A32934C8270072B307 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 		9DE65C78291512FA00804F13 /* XCRemoteSwiftPackageReference "WhatsNewKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SvenTiigi/WhatsNewKit";
@@ -1543,11 +1535,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9D87B0A42934C8270072B307 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9D87B0A32934C8270072B307 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
 		9DE65C79291512FA00804F13 /* WhatsNewKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9DE65C78291512FA00804F13 /* XCRemoteSwiftPackageReference "WhatsNewKit" */;

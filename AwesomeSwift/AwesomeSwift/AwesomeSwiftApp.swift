@@ -7,22 +7,22 @@
 
 import SwiftUI
 //import Rswift
-import FirebaseCore
-import FirebaseCrashlytics
+//import FirebaseCore
+//import FirebaseCrashlytics
 
 // 路由框架：https://blog.csdn.net/lizitao/article/details/82223468
 @main
 struct AwesomeSwiftApp: App {
 
     init() {
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         // Firebase Crashlytics 使用说明：
         // 按照官网的说明，添加 Firebase Crashlytics 依赖
         // 修改 Build Settings，输出 dSYM 文件
         // 修改 Build Phase，添加上传 dSYM 文件的逻辑
         // 添加崩溃，然后测试，测试的时候需要构建完成并 Stop 再测试，因为处于 debug 状态的时候，xcode 会拦截崩溃
         // 参考：https://firebase.google.com/docs/crashlytics/get-started?platform=ios#add-sdk
-        Crashlytics.crashlytics().log("App loaded")
+//        Crashlytics.crashlytics().log("App loaded")
     }
     
     var body: some Scene {

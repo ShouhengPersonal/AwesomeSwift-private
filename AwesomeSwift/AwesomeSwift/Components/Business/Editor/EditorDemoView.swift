@@ -15,8 +15,8 @@ struct EditorDemoView: View {
             NavigationLink("基于 RichEditorView 的编辑器", destination: {
                 RichEditorDemoView()
             })
-            NavigationLink("MarkdownViewDemo") {
-                MarkdownViewDemo()
+            NavigationLink("基于 MarkdownTextView 的编辑器") {
+                MarkdownTextViewDemo()
             }
             NavigationLink("基于 Ink 的渲染") {
                 MarkdownRenderView(md: MD_SAMPLE_TEXT)
