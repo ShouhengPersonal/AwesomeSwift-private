@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -114,8 +114,11 @@
 		9DE65CC22917F38800804F13 /* KeyboardAwareDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65CC12917F38800804F13 /* KeyboardAwareDemoView.swift */; };
 		9DE65CC42918096A00804F13 /* KeyboardAwareDemoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */; };
 		B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50099D577C029A65A007F832 /* Pods_AwesomeSwift.framework */; };
+		F226C2B32C05B62900B67CA5 /* MarkdownRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */; };
+		F226C3552C05C10C00B67CA5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = F226C3542C05C10C00B67CA5 /* Ink */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
+		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
 		F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898832C0448790056DB4E /* HeatmapView.swift */; };
 		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
 		F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898872C047C2B0056DB4E /* DrawerLayout.swift */; };
@@ -274,8 +277,10 @@
 		9DE65CC12917F38800804F13 /* KeyboardAwareDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView.swift; sourceTree = "<group>"; };
 		9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView2.swift; sourceTree = "<group>"; };
 		D97B031A2C8DA6B18B475D85 /* Pods-AwesomeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderView.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
+		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
 		F2F898832C0448790056DB4E /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
 		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
 		F2F898872C047C2B0056DB4E /* DrawerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayout.swift; sourceTree = "<group>"; };
@@ -289,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D87B0A52934C8270072B307 /* FirebaseCrashlytics in Frameworks */,
+				F226C3552C05C10C00B67CA5 /* Ink in Frameworks */,
 				9DE65C7A291512FA00804F13 /* WhatsNewKit in Frameworks */,
 				B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */,
 			);
@@ -712,6 +718,8 @@
 			children = (
 				F27A80822C05A0680023CDE6 /* EditorDemoView.swift */,
 				F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */,
+				F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */,
+				F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -741,6 +749,7 @@
 			packageProductDependencies = (
 				9DE65C79291512FA00804F13 /* WhatsNewKit */,
 				9D87B0A42934C8270072B307 /* FirebaseCrashlytics */,
+				F226C3542C05C10C00B67CA5 /* Ink */,
 			);
 			productName = AwesomeSwift;
 			productReference = 9D4D228329102713006E0075 /* AwesomeSwift.app */;
@@ -838,6 +847,7 @@
 			packageReferences = (
 				9DE65C78291512FA00804F13 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
 				9D87B0A32934C8270072B307 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F226C3532C05C04C00B67CA5 /* XCLocalSwiftPackageReference "../../Ink" */,
 			);
 			productRefGroup = 9D4D228429102713006E0075 /* Products */;
 			projectDirPath = "";
@@ -1028,10 +1038,12 @@
 				9DB8A3972937AED2003DAC4A /* ScannerDemoView.swift in Sources */,
 				9DE65CC02917E94D00804F13 /* ImmersiveView.swift in Sources */,
 				9DE65C7C29156FDD00804F13 /* WhatsNewKitView.swift in Sources */,
+				F226C2B32C05B62900B67CA5 /* MarkdownRenderView.swift in Sources */,
 				9D643701292E6BF20074261A /* LaunchPhonePageDemo.swift in Sources */,
 				F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */,
 				9DB8A39029366110003DAC4A /* AudioPlayDemoView.swift in Sources */,
 				9DE65C7E2916056B00804F13 /* SegmentedViewDemo.swift in Sources */,
+				F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */,
 				9DE65CB229164C1D00804F13 /* TextFieldDemoView.swift in Sources */,
 				9DE65C9429162C7100804F13 /* TextDemoView.swift in Sources */,
 				9D64370B292F8FC90074261A /* ShareDemoView.swift in Sources */,
@@ -1504,6 +1516,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		F226C3532C05C04C00B67CA5 /* XCLocalSwiftPackageReference "../../Ink" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Ink;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		9D87B0A32934C8270072B307 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1533,6 +1552,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9DE65C78291512FA00804F13 /* XCRemoteSwiftPackageReference "WhatsNewKit" */;
 			productName = WhatsNewKit;
+		};
+		F226C3542C05C10C00B67CA5 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F226C3532C05C04C00B67CA5 /* XCLocalSwiftPackageReference "../../Ink" */;
+			productName = Ink;
 		};
 /* End XCSwiftPackageProductDependency section */
 

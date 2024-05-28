@@ -11,10 +11,16 @@ import SwiftUI
 /// 编辑器示例
 struct EditorDemoView: View {
     var body: some View {
-        VStack {
-            NavigationLink("RichEditorDemoView", destination: {
+        VStack(spacing: 15) {
+            NavigationLink("基于 RichEditorView 的编辑器", destination: {
                 RichEditorDemoView()
             })
+            NavigationLink("MarkdownViewDemo") {
+                MarkdownViewDemo()
+            }
+            NavigationLink("基于 Ink 的渲染") {
+                MarkdownRenderView(md: MD_SAMPLE_TEXT)
+            }
         }
     }
 }
