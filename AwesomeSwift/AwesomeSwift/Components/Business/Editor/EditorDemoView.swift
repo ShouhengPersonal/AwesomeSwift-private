@@ -21,6 +21,13 @@ struct EditorDemoView: View {
             NavigationLink("基于 Ink 的渲染") {
                 MarkdownRenderView(md: MD_SAMPLE_TEXT)
             }
+            NavigationLink("Highlightr 示例") {
+                if #available(iOS 15, *) {
+                    HighlightrDemoView()
+                } else {
+                    Text("Unavilable on device below 15.0")
+                }
+            }
         }
     }
 }

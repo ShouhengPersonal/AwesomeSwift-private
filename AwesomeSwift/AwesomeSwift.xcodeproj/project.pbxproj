@@ -116,6 +116,7 @@
 		F226C2B32C05B62900B67CA5 /* MarkdownRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */; };
 		F226C3552C05C10C00B67CA5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = F226C3542C05C10C00B67CA5 /* Ink */; };
 		F226C3572C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */; };
+		F226C37A2C06196400B67CA5 /* HighlightrDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
@@ -279,6 +280,7 @@
 		D97B031A2C8DA6B18B475D85 /* Pods-AwesomeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderView.swift; sourceTree = "<group>"; };
 		F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextViewDemo.swift; sourceTree = "<group>"; };
+		F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightrDemoView.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
@@ -721,6 +723,7 @@
 				F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */,
 				F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */,
 				F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */,
+				F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -1029,6 +1032,7 @@
 				9DE65CA029163F6F00804F13 /* LynnPullToRefreshModifier.swift in Sources */,
 				9DDD6905291A960B00E2CB69 /* Events.swift in Sources */,
 				9DE65CB129164C1D00804F13 /* ButtonDemoView.swift in Sources */,
+				F226C37A2C06196400B67CA5 /* HighlightrDemoView.swift in Sources */,
 				9D92EFE7293B185400061967 /* AlertToast.swift in Sources */,
 				9D87B0A92934D3860072B307 /* SqlLiteDemoView.swift in Sources */,
 				9D87B0AC2934D3D00072B307 /* TaskDataStore.swift in Sources */,

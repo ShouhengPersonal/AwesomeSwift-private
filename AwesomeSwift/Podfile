@@ -38,6 +38,7 @@ target 'AwesomeSwift' do
 #  编辑器和 md 浏览器
   pod "RichEditorView"
 #  pod "MarkdownTextView", :git => 'git@github.com:indragiek/MarkdownTextView.git', :tag => '1.0.1'
+  pod 'Highlightr'
 end
 
 post_install do |installer|
