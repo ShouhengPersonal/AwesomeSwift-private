@@ -114,6 +114,8 @@
 		9DE65CC22917F38800804F13 /* KeyboardAwareDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65CC12917F38800804F13 /* KeyboardAwareDemoView.swift */; };
 		9DE65CC42918096A00804F13 /* KeyboardAwareDemoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */; };
 		B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50099D577C029A65A007F832 /* Pods_AwesomeSwift.framework */; };
+		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
+		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898832C0448790056DB4E /* HeatmapView.swift */; };
 		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
 		F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898872C047C2B0056DB4E /* DrawerLayout.swift */; };
@@ -272,6 +274,8 @@
 		9DE65CC12917F38800804F13 /* KeyboardAwareDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView.swift; sourceTree = "<group>"; };
 		9DE65CC32918096A00804F13 /* KeyboardAwareDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAwareDemoView2.swift; sourceTree = "<group>"; };
 		D97B031A2C8DA6B18B475D85 /* Pods-AwesomeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
+		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F2F898832C0448790056DB4E /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
 		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
 		F2F898872C047C2B0056DB4E /* DrawerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayout.swift; sourceTree = "<group>"; };
@@ -601,6 +605,7 @@
 		9DDD690A291BFBBB00E2CB69 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				F27A80812C05A05D0023CDE6 /* Editor */,
 				9DB8A3912937AB0D003DAC4A /* Vision */,
 				9DA605A32920F16000EFFA1D /* Permission */,
 				9DDD690B291BFBCC00E2CB69 /* Events */,
@@ -700,6 +705,15 @@
 				9DE65C9D29163F6F00804F13 /* LynnPullToRefresh.swift */,
 			);
 			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		F27A80812C05A05D0023CDE6 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				F27A80822C05A0680023CDE6 /* EditorDemoView.swift */,
+				F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -981,6 +995,7 @@
 				9DB8A3952937ABCE003DAC4A /* DataScanner.swift in Sources */,
 				9D6436FF292E64EF0074261A /* AppInfoDemoView.swift in Sources */,
 				9D71C89B2AA760960049CDDD /* GestureDemoView.swift in Sources */,
+				F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */,
 				9DB8A3892935C6A3003DAC4A /* DocumentPicker.swift in Sources */,
 				9D92EFE8293B185400061967 /* ActivityIndicator.swift in Sources */,
 				9D4D228729102713006E0075 /* AwesomeSwiftApp.swift in Sources */,
@@ -1014,6 +1029,7 @@
 				9DE65CC02917E94D00804F13 /* ImmersiveView.swift in Sources */,
 				9DE65C7C29156FDD00804F13 /* WhatsNewKitView.swift in Sources */,
 				9D643701292E6BF20074261A /* LaunchPhonePageDemo.swift in Sources */,
+				F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */,
 				9DB8A39029366110003DAC4A /* AudioPlayDemoView.swift in Sources */,
 				9DE65C7E2916056B00804F13 /* SegmentedViewDemo.swift in Sources */,
 				9DE65CB229164C1D00804F13 /* TextFieldDemoView.swift in Sources */,

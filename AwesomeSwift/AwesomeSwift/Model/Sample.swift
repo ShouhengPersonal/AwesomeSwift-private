@@ -52,6 +52,7 @@ struct SampleData {
         SampleItem(name: "抽屉页面框架", destination: DrawerLayoutDemoView()),
         SampleItem(name: "全屏页面", destination: ImmersiveView()),
         SampleItem(name: "软键盘", destination: KeyboardDemoView()),
+        SampleItem(name: "编辑器", destination: EditorDemoView()),
         SampleItem(name: "列表", destination: ListSampleView()),
         SampleItem(name: "更新提示*", destination: WhatsNewKitView()),
         SampleItem(name: "通知*", destination: NotificationBannerView()),
