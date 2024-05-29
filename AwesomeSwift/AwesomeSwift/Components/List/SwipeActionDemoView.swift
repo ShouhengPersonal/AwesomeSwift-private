@@ -34,6 +34,15 @@ struct SwipeActionDemoView: View {
                             } label: {
                                 Label("Delete", systemImage: "trash.fill")
                             }
+                            
+                            Button(action: {
+                                
+                            }, label: {
+                                VStack {
+                                    Text("TEST")
+                                    Image(systemName: "trash.fill")
+                                }.tint(.purple)
+                            })
                         }
                 }
             }
