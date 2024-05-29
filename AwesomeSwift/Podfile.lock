@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.9.1)
+  - CropViewController (2.7.4)
   - DropDown (2.3.13)
   - FilesProvider (0.26.0)
   - HandyJSON (5.0.4-beta)
@@ -29,6 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - "Alamofire (from `git@github.com:Alamofire/Alamofire.git`)"
+  - CropViewController
   - DropDown
   - FilesProvider
   - "HandyJSON (from `git@github.com:alibaba/HandyJSON.git`)"
@@ -48,6 +50,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - CropViewController
     - DropDown
     - FilesProvider
     - Highlightr
@@ -86,6 +89,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  CropViewController: 3489bbf95a3e11c654382b0bae08ac645cdf1b93
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   FilesProvider: 2a8ae17d8b9c23a6feadb1308ee638fa31d21065
   HandyJSON: a9c67202df97805a0ba4a00e30b50e9a30ac28f3
@@ -105,6 +109,6 @@ SPEC CHECKSUMS:
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: db99a42935cda82b116a80f84606267a9312f38f
+PODFILE CHECKSUM: 0d0e8cc8eec95c44c4af2c9a81dcb44ed89285e7
 
 COCOAPODS: 1.15.2
