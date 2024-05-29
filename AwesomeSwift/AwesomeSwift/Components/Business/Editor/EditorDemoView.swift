@@ -28,6 +28,9 @@ struct EditorDemoView: View {
                     Text("Unavilable on device below 15.0")
                 }
             }
+            NavigationLink("CodeEditor 示例") {
+                CodeEditorDemoView()
+            }
         }
     }
 }

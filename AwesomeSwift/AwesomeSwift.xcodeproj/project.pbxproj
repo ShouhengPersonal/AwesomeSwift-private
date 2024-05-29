@@ -117,6 +117,8 @@
 		F226C3552C05C10C00B67CA5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = F226C3542C05C10C00B67CA5 /* Ink */; };
 		F226C3572C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */; };
 		F226C37A2C06196400B67CA5 /* HighlightrDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */; };
+		F226C37D2C06D4FF00B67CA5 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = F226C37C2C06D4FF00B67CA5 /* CodeEditor */; };
+		F226C37F2C06D52A00B67CA5 /* CodeEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
@@ -281,6 +283,7 @@
 		F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderView.swift; sourceTree = "<group>"; };
 		F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextViewDemo.swift; sourceTree = "<group>"; };
 		F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightrDemoView.swift; sourceTree = "<group>"; };
+		F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
@@ -296,6 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F226C37D2C06D4FF00B67CA5 /* CodeEditor in Frameworks */,
 				F226C3552C05C10C00B67CA5 /* Ink in Frameworks */,
 				9DE65C7A291512FA00804F13 /* WhatsNewKit in Frameworks */,
 				B3E192ED2397AEC01D6093AD /* Pods_AwesomeSwift.framework in Frameworks */,
@@ -724,6 +728,7 @@
 				F226C2B22C05B62900B67CA5 /* MarkdownRenderView.swift */,
 				F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */,
 				F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */,
+				F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -742,7 +747,6 @@
 				9D4D228129102713006E0075 /* Resources */,
 				B6F4940062E8F82151B1A53F /* [CP] Embed Pods Frameworks */,
 				9D9D0AD82930D7E500605056 /* Embed Foundation Extensions */,
-				9D87B0A62934CBCA0072B307 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -753,6 +757,7 @@
 			packageProductDependencies = (
 				9DE65C79291512FA00804F13 /* WhatsNewKit */,
 				F226C3542C05C10C00B67CA5 /* Ink */,
+				F226C37C2C06D4FF00B67CA5 /* CodeEditor */,
 			);
 			productName = AwesomeSwift;
 			productReference = 9D4D228329102713006E0075 /* AwesomeSwift.app */;
@@ -850,6 +855,7 @@
 			packageReferences = (
 				9DE65C78291512FA00804F13 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
 				F226C3532C05C04C00B67CA5 /* XCLocalSwiftPackageReference "../../Ink" */,
+				F226C37B2C06D4E400B67CA5 /* XCLocalSwiftPackageReference "../../CodeEditor" */,
 			);
 			productRefGroup = 9D4D228429102713006E0075 /* Products */;
 			projectDirPath = "";
@@ -906,26 +912,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9D87B0A62934CBCA0072B307 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			name = "Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
-		};
 		9DE65C6C29135ACC00804F13 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -1075,6 +1061,7 @@
 				9DE65CB329164C1D00804F13 /* LayoutDemoView.swift in Sources */,
 				9DE65C5529116DDF00804F13 /* Project.swift in Sources */,
 				9DE65CA129163F6F00804F13 /* LynnPullToRefresh.swift in Sources */,
+				F226C37F2C06D52A00B67CA5 /* CodeEditorDemoView.swift in Sources */,
 				9DDD6907291B897900E2CB69 /* KeyboardReadable.swift in Sources */,
 				9DB8A39B293847A2003DAC4A /* TextRecognition.swift in Sources */,
 				9D4D229329102714006E0075 /* AwesomeSwift.xcdatamodeld in Sources */,
@@ -1525,6 +1512,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../Ink;
 		};
+		F226C37B2C06D4E400B67CA5 /* XCLocalSwiftPackageReference "../../CodeEditor" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../CodeEditor;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1548,6 +1539,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F226C3532C05C04C00B67CA5 /* XCLocalSwiftPackageReference "../../Ink" */;
 			productName = Ink;
+		};
+		F226C37C2C06D4FF00B67CA5 /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F226C37B2C06D4E400B67CA5 /* XCLocalSwiftPackageReference "../../CodeEditor" */;
+			productName = CodeEditor;
 		};
 /* End XCSwiftPackageProductDependency section */
 
