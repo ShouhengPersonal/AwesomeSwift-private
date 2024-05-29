@@ -39,6 +39,10 @@ target 'AwesomeSwift' do
   pod "RichEditorView"
 #  pod "MarkdownTextView", :git => 'git@github.com:indragiek/MarkdownTextView.git', :tag => '1.0.1'
   pod 'Highlightr'
+  
+#  图片浏览
+  pod 'ImageViewer.swift', '~> 3.0'
+  pod 'ImageViewer.swift/Fetcher', '~> 3.0'
 end
 
 post_install do |installer|

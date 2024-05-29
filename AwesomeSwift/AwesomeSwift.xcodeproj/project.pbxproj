@@ -119,6 +119,8 @@
 		F226C37A2C06196400B67CA5 /* HighlightrDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */; };
 		F226C37D2C06D4FF00B67CA5 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = F226C37C2C06D4FF00B67CA5 /* CodeEditor */; };
 		F226C37F2C06D52A00B67CA5 /* CodeEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */; };
+		F226C3822C06DD5100B67CA5 /* ImageBizDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3812C06DD5100B67CA5 /* ImageBizDemoView.swift */; };
+		F226C3842C06DD7900B67CA5 /* ImageViewerDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3832C06DD7900B67CA5 /* ImageViewerDemoView.swift */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
@@ -284,6 +286,8 @@
 		F226C3562C05CF5D00B67CA5 /* MarkdownTextViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextViewDemo.swift; sourceTree = "<group>"; };
 		F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightrDemoView.swift; sourceTree = "<group>"; };
 		F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorDemoView.swift; sourceTree = "<group>"; };
+		F226C3812C06DD5100B67CA5 /* ImageBizDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBizDemoView.swift; sourceTree = "<group>"; };
+		F226C3832C06DD7900B67CA5 /* ImageViewerDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerDemoView.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
@@ -617,6 +621,7 @@
 		9DDD690A291BFBBB00E2CB69 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				F226C3802C06DD2300B67CA5 /* Image */,
 				F27A80812C05A05D0023CDE6 /* Editor */,
 				9DB8A3912937AB0D003DAC4A /* Vision */,
 				9DA605A32920F16000EFFA1D /* Permission */,
@@ -717,6 +722,15 @@
 				9DE65C9D29163F6F00804F13 /* LynnPullToRefresh.swift */,
 			);
 			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		F226C3802C06DD2300B67CA5 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F226C3812C06DD5100B67CA5 /* ImageBizDemoView.swift */,
+				F226C3832C06DD7900B67CA5 /* ImageViewerDemoView.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		F27A80812C05A05D0023CDE6 /* Editor */ = {
@@ -1046,12 +1060,14 @@
 				9D9D0AE929335E7700605056 /* FileDemoView.swift in Sources */,
 				9D643703292E76980074261A /* MailView.swift in Sources */,
 				9DE65CC22917F38800804F13 /* KeyboardAwareDemoView.swift in Sources */,
+				F226C3822C06DD5100B67CA5 /* ImageBizDemoView.swift in Sources */,
 				9D92EFE6293B185400061967 /* BlurView.swift in Sources */,
 				9DE65CB429164C1D00804F13 /* AnimationDemoView.swift in Sources */,
 				9D6437112930BD510074261A /* ChangeIconDemoView.swift in Sources */,
 				9DE65CB529164C1D00804F13 /* ImageDemoView.swift in Sources */,
 				9DA605A52920F17700EFFA1D /* AppPermisions.swift in Sources */,
 				F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */,
+				F226C3842C06DD7900B67CA5 /* ImageViewerDemoView.swift in Sources */,
 				F2F8988C2C04BFE90056DB4E /* KeyboardDemoView4.swift in Sources */,
 				F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */,
 				9DE65CB729164C1D00804F13 /* BottomTabDemoView.swift in Sources */,

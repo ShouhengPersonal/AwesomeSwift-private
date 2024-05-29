@@ -39,6 +39,7 @@ struct SampleData {
         SampleItem(name: "输入框", destination: TextFieldDemoView()),
         SampleItem(name: "图片展示", destination: ImageDemoView()),
         SampleItem(name: "图片选择", destination: ImagePickDemoView()),
+        SampleItem(name: "图片浏览", destination: ImageBizDemoView()),
         SampleItem(name: "表单", destination: FormDemoView()),
         SampleItem(name: "手势", destination: GestureDemoView()),
         SampleItem(name: "动画", destination: AnimationDemoView()),
