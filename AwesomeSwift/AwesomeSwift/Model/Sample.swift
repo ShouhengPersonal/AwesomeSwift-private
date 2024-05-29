@@ -45,6 +45,7 @@ struct SampleData {
         SampleItem(name: "动画", destination: AnimationDemoView()),
         SampleItem(name: "布局", destination: LayoutDemoView()),
         SampleItem(name: "弹窗", destination: PopupDemoView()),
+        SampleItem(name: "下拉弹窗", destination: DropdownEntranceView()),
         SampleItem(name: "热力图", destination: HeatmapDemoView()),
         SampleItem(name: "提示*", destination: AlertDemoView()),
         SampleItem(name: "TAB页面", destination: TabPageDemoView()),
