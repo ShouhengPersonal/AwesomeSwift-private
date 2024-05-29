@@ -43,6 +43,7 @@ target 'AwesomeSwift' do
 #  图片浏览
   pod 'ImageViewer.swift', '~> 3.0'
   pod 'ImageViewer.swift/Fetcher', '~> 3.0'
+  pod 'SKPhotoBrowser'
 end
 
 post_install do |installer|

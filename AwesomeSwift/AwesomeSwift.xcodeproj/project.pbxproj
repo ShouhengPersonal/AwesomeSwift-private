@@ -121,6 +121,7 @@
 		F226C37F2C06D52A00B67CA5 /* CodeEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */; };
 		F226C3822C06DD5100B67CA5 /* ImageBizDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3812C06DD5100B67CA5 /* ImageBizDemoView.swift */; };
 		F226C3842C06DD7900B67CA5 /* ImageViewerDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3832C06DD7900B67CA5 /* ImageViewerDemoView.swift */; };
+		F226C3862C06ECE300B67CA5 /* SKPhotoBrowserDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3852C06ECE300B67CA5 /* SKPhotoBrowserDemoView.swift */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
@@ -288,6 +289,7 @@
 		F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorDemoView.swift; sourceTree = "<group>"; };
 		F226C3812C06DD5100B67CA5 /* ImageBizDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBizDemoView.swift; sourceTree = "<group>"; };
 		F226C3832C06DD7900B67CA5 /* ImageViewerDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerDemoView.swift; sourceTree = "<group>"; };
+		F226C3852C06ECE300B67CA5 /* SKPhotoBrowserDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserDemoView.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
@@ -729,6 +731,7 @@
 			children = (
 				F226C3812C06DD5100B67CA5 /* ImageBizDemoView.swift */,
 				F226C3832C06DD7900B67CA5 /* ImageViewerDemoView.swift */,
+				F226C3852C06ECE300B67CA5 /* SKPhotoBrowserDemoView.swift */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -1026,6 +1029,7 @@
 				9DE65C532911495800804F13 /* ProjectList.swift in Sources */,
 				9DA6059F291F516400EFFA1D /* SectionListView.swift in Sources */,
 				9DDD6909291BF36F00E2CB69 /* CustomPreference.swift in Sources */,
+				F226C3862C06ECE300B67CA5 /* SKPhotoBrowserDemoView.swift in Sources */,
 				9DE65CBE291667BE00804F13 /* FormDemoView.swift in Sources */,
 				9D71C8992AA6B0E00049CDDD /* Consts.swift in Sources */,
 				9DE65C9F29163F6F00804F13 /* LynnRefreshState.swift in Sources */,

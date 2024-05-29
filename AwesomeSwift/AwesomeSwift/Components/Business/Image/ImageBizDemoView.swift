@@ -12,8 +12,11 @@ import SwiftUI
 struct ImageBizDemoView: View {
     var body: some View {
         VStack(spacing: 15) {
-            NavigationLink("基于 ImageViewer 的图片展示", destination: {
+            NavigationLink("基于 ImageViewer 的图片浏览", destination: {
                 ImageViewerDemoView()
+            })
+            NavigationLink("基于 SKPhotoBrowser 的图片浏览", destination: {
+                SKPhotoBrowserDemoView()
             })
         }
     }
