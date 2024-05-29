@@ -46,7 +46,13 @@ target 'AwesomeSwift' do
   pod 'ImageViewer.swift/Fetcher', '~> 3.0'
   pod 'SKPhotoBrowser'
   pod 'CropViewController'
+  
+  pod 'SwiftLint', '~> 0.30.0'
 end
+
+#def framework_pods
+#    pod 'SwiftLint', '~> 0.30.0'
+#end
 
 post_install do |installer|
   installer.generated_projects.each do |project|
