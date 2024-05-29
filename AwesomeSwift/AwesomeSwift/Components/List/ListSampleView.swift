@@ -28,6 +28,16 @@ struct ListSampleView: View {
             } label: {
                 Text("侧滑列表示例")
             }.frame(height: 40)
+            
+            NavigationLink{
+                if #available(iOS 15.0, *) {
+                    SwipeActionDemoView()
+                } else {
+                    Text("15.0+ only")
+                }
+            } label: {
+                Text("官方控件侧滑示例")
+            }.frame(height: 40)
         }.navigationBarTitleDisplayMode(.inline)
     }
 }
