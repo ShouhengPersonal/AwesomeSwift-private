@@ -31,6 +31,12 @@ struct EditorDemoView: View {
             NavigationLink("CodeEditor 示例") {
                 CodeEditorDemoView()
             }
+            NavigationLink("FSNote 示例") {
+                FSNoteDemoView()
+            }
+            NavigationLink("自定义编辑器 示例") {
+                CustomEditorDemoView()
+            }
         }
     }
 }
