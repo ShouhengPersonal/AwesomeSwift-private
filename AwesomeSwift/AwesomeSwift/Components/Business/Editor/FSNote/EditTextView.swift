@@ -13,7 +13,7 @@ class EditTextView: UITextView, UITextViewDelegate {
 
 //    public var editorViewController: EditorViewController?
     public var textStorageProcessor: TextStorageProcessor?
-        
+    
     public var isFillAction = false
     public var isAllowedScrollRect: Bool?
     public var typingFont: UIFont?

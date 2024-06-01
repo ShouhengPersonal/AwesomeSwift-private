@@ -9,9 +9,7 @@ import Foundation
 import UIKit
 
 class CustomTextView: UITextView, UITextViewDelegate {
-    
-    let note = Note()
-    
+
     func undo() -> Bool {
         self.undoManager?.undo()
         return self.undoManager?.canUndo == true
@@ -54,9 +52,21 @@ class CustomTextView: UITextView, UITextViewDelegate {
         return super.canPerformAction(action, withSender: sender)
     }
     
+    // 询问委托是否替换文本视图中的指定文本。
+    //    参数
+    //    textView
+    //    包含更改的文本视图。
+    //
+    //    range
+    //    当前选择范围。如果范围长度为0，则范围反映当前插入点。如果用户按下Delete键，则该范围的长度为1，并用一个空字符串对象替换该单个字符。
+    //
+    //    text
+    //    要插入的文本。
+    //
+    //    返回值
+    //    如果旧文本应该被新文本取代，则为True;如果替换操作应该中止，则为False。
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        print("textView")
-        
+        print("on textView:\nshouldChangeTextIn: \(range)\ntext:\(text)")
         // New line
 //        if text == "\n" {
 //            let formatter = TextFormatter(textView: textView, note: note)

@@ -406,7 +406,7 @@ public class NotesTextProcessor {
     }
 
     public static func highlight(note: Note) {
-        highlightMarkdown(attributedString: note.content, note: note)
+        highlightMarkdown(attributedString: note.content)
         highlightFencedAndIndentCodeBlocks(attributedString: note.content)
     }
 
@@ -524,7 +524,7 @@ public class NotesTextProcessor {
         #endif
     }
 
-    public static func highlightMarkdown(attributedString: NSMutableAttributedString, paragraphRange: NSRange? = nil, note: Note) {
+    public static func highlightMarkdown(attributedString: NSMutableAttributedString, paragraphRange: NSRange? = nil) {
         let paragraphRange = paragraphRange ?? NSRange(0..<attributedString.length)
         let isFullScan = attributedString.length == paragraphRange.upperBound && paragraphRange.lowerBound == 0
         let string = attributedString.string

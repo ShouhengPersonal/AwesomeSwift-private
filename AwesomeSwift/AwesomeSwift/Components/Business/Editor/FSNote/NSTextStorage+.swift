@@ -13,6 +13,8 @@ import UIKit
 #endif
 
 extension NSTextStorage {
+    
+    
     public func getImageRange(url: URL) -> NSRange? {
         let affectedRange = NSRange(0..<length)
         var foundRange: NSRange?

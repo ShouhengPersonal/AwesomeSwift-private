@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// 笔记的类型，分成 md 和富文本两种类型
+/// 我们开发的时候可以根据情况增加自己的类型
 public enum NoteType: String {
     case Markdown = "md"
     case RichText = "rtf"
@@ -22,25 +24,25 @@ public enum NoteType: String {
     
     static func withTag(rawValue: Int) -> NoteType {
         switch rawValue {
-        case 1: return .Markdown
-        case 2: return .RichText
-        default: return .Markdown
+            case 1: return .Markdown
+            case 2: return .RichText
+            default: return .Markdown
         }
     }
     
     static func withUTI(rawValue: String) -> NoteType {
         switch rawValue {
-        case "net.daringfireball.markdown": return .Markdown
-        case "public.rtf": return .RichText
-        default: return .Markdown
+            case "net.daringfireball.markdown": return .Markdown
+            case "public.rtf": return .RichText
+            default: return .Markdown
         }
     }
-        
+    
     public var tag: Int {
         get {
             switch self {
-            case .Markdown: return 1
-            case .RichText: return 2
+                case .Markdown: return 1
+                case .RichText: return 2
             }
         }
     }
@@ -48,8 +50,8 @@ public enum NoteType: String {
     public var uti: String {
         get {
             switch self {
-            case .Markdown: return "net.daringfireball.markdown"
-            case .RichText: return "public.rtf"
+                case .Markdown: return "net.daringfireball.markdown"
+                case .RichText: return "public.rtf"
             }
         }
     }
@@ -58,7 +60,6 @@ public enum NoteType: String {
         if self == .RichText {
             return "rtf"
         }
-
         return UserDefaultsManagement.noteExtension
     }
 }

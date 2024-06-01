@@ -26,6 +26,7 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
         didProcessEditing editedMask: NSTextStorage.EditActions,
         range editedRange: NSRange,
         changeInLength delta: Int) {
+        print("on textStorage:\n textStorage: \(textStorage)\nrange: \(editedRange)\nchangeInLength:\(delta)")
 
         guard editedMask != .editedAttributes else { return }
         process(textStorage: textStorage, range: editedRange, changeInLength: delta)
@@ -90,7 +91,7 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
         let range = NSRange(0..<textStorage.length)
         textStorage.removeAttribute(.backgroundColor, range: range)
 
-        NotesTextProcessor.highlightMarkdown(attributedString: textStorage, note: note)
+        NotesTextProcessor.highlightMarkdown(attributedString: textStorage)
         NotesTextProcessor.highlightFencedAndIndentCodeBlocks(attributedString: textStorage)
 
 //        textStorage.updateParagraphStyle()
@@ -208,7 +209,7 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
         }
 
         guard let note = editor?.note else { return }
-        NotesTextProcessor.highlightMarkdown(attributedString: textStorage, paragraphRange: parRange, note: note)
+        NotesTextProcessor.highlightMarkdown(attributedString: textStorage, paragraphRange: parRange)
         NotesTextProcessor.checkBackTick(styleApplier: textStorage, paragraphRange: parRange)
     }
 
@@ -230,7 +231,7 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
 //            NotesTextProcessor.highlightCode(attributedString: textStorage, range: checkRange)
         } else {
             guard let note = editor?.note else { return }
-            NotesTextProcessor.highlightMarkdown(attributedString: textStorage, paragraphRange: parRange, note: note)
+            NotesTextProcessor.highlightMarkdown(attributedString: textStorage, paragraphRange: parRange)
             NotesTextProcessor.checkBackTick(styleApplier: textStorage, paragraphRange: parRange)
 //            textStorage.updateParagraphStyle(range: parRange)
         }

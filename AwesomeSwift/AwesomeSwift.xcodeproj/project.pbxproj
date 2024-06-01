@@ -129,15 +129,15 @@
 		F226C3942C08299F00B67CA5 /* EditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3932C08299F00B67CA5 /* EditTextView.swift */; };
 		F226C3972C082C4600B67CA5 /* UserDefaultsManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3962C082C4600B67CA5 /* UserDefaultsManagement.swift */; };
 		F226C3992C082E8200B67CA5 /* EditorSelectionRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3982C082E8200B67CA5 /* EditorSelectionRect.swift */; };
-		F226C39B2C082EC100B67CA5 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C39A2C082EC100B67CA5 /* NSMutableAttributedString.swift */; };
+		F226C39B2C082EC100B67CA5 /* NSMutableAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C39A2C082EC100B67CA5 /* NSMutableAttributedString+.swift */; };
 		F226C39D2C082EE400B67CA5 /* AttributedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C39C2C082EE400B67CA5 /* AttributedBox.swift */; };
 		F226C39F2C082F5F00B67CA5 /* NSAttributedStringKey+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C39E2C082F5F00B67CA5 /* NSAttributedStringKey+.swift */; };
 		F226C3A12C082F7600B67CA5 /* NotesTextProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3A02C082F7600B67CA5 /* NotesTextProcessor.swift */; };
 		F226C3A32C08304000B67CA5 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3A22C08304000B67CA5 /* UIColor+.swift */; };
-		F226C3A52C08326300B67CA5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3A42C08326300B67CA5 /* UIFont.swift */; };
+		F226C3A52C08326300B67CA5 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3A42C08326300B67CA5 /* UIFont+.swift */; };
 		F226C3A82C0832AF00B67CA5 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3A72C0832AF00B67CA5 /* String+.swift */; };
 		F226C3AA2C0833BA00B67CA5 /* TextStorageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3A92C0833BA00B67CA5 /* TextStorageProcessor.swift */; };
-		F226C3AC2C08344D00B67CA5 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3AB2C08344D00B67CA5 /* UITextView.swift */; };
+		F226C3AC2C08344D00B67CA5 /* UITextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3AB2C08344D00B67CA5 /* UITextView+.swift */; };
 		F226C3AE2C0834CB00B67CA5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3AD2C0834CB00B67CA5 /* Colors.swift */; };
 		F226C3B02C0834F300B67CA5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3AF2C0834F300B67CA5 /* Note.swift */; };
 		F226C3B22C08351100B67CA5 /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3B12C08351100B67CA5 /* NoteType.swift */; };
@@ -149,7 +149,7 @@
 		F226C3C12C08921F00B67CA5 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3C02C08921F00B67CA5 /* TextFormatter.swift */; };
 		F27A80832C05A0680023CDE6 /* EditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80822C05A0680023CDE6 /* EditorDemoView.swift */; };
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
-		F29333812C08ADAD00DC31F2 /* NSTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29333802C08ADAD00DC31F2 /* NSTextStorage.swift */; };
+		F29333812C08ADAD00DC31F2 /* NSTextStorage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29333802C08ADAD00DC31F2 /* NSTextStorage+.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
 		F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898832C0448790056DB4E /* HeatmapView.swift */; };
 		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
@@ -323,15 +323,15 @@
 		F226C3932C08299F00B67CA5 /* EditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextView.swift; sourceTree = "<group>"; };
 		F226C3962C082C4600B67CA5 /* UserDefaultsManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagement.swift; sourceTree = "<group>"; };
 		F226C3982C082E8200B67CA5 /* EditorSelectionRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSelectionRect.swift; sourceTree = "<group>"; };
-		F226C39A2C082EC100B67CA5 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		F226C39A2C082EC100B67CA5 /* NSMutableAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+.swift"; sourceTree = "<group>"; };
 		F226C39C2C082EE400B67CA5 /* AttributedBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedBox.swift; sourceTree = "<group>"; };
 		F226C39E2C082F5F00B67CA5 /* NSAttributedStringKey+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedStringKey+.swift"; sourceTree = "<group>"; };
 		F226C3A02C082F7600B67CA5 /* NotesTextProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTextProcessor.swift; sourceTree = "<group>"; };
 		F226C3A22C08304000B67CA5 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		F226C3A42C08326300B67CA5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		F226C3A42C08326300B67CA5 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		F226C3A72C0832AF00B67CA5 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		F226C3A92C0833BA00B67CA5 /* TextStorageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStorageProcessor.swift; sourceTree = "<group>"; };
-		F226C3AB2C08344D00B67CA5 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		F226C3AB2C08344D00B67CA5 /* UITextView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+.swift"; sourceTree = "<group>"; };
 		F226C3AD2C0834CB00B67CA5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F226C3AF2C0834F300B67CA5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		F226C3B12C08351100B67CA5 /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 		F226C3C02C08921F00B67CA5 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
 		F27A80822C05A0680023CDE6 /* EditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDemoView.swift; sourceTree = "<group>"; };
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
-		F29333802C08ADAD00DC31F2 /* NSTextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextStorage.swift; sourceTree = "<group>"; };
+		F29333802C08ADAD00DC31F2 /* NSTextStorage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextStorage+.swift"; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
 		F2F898832C0448790056DB4E /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
 		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
@@ -806,21 +806,21 @@
 				F226C3932C08299F00B67CA5 /* EditTextView.swift */,
 				F226C3962C082C4600B67CA5 /* UserDefaultsManagement.swift */,
 				F226C3982C082E8200B67CA5 /* EditorSelectionRect.swift */,
-				F226C39A2C082EC100B67CA5 /* NSMutableAttributedString.swift */,
+				F226C39A2C082EC100B67CA5 /* NSMutableAttributedString+.swift */,
 				F226C39C2C082EE400B67CA5 /* AttributedBox.swift */,
 				F226C39E2C082F5F00B67CA5 /* NSAttributedStringKey+.swift */,
 				F226C3A02C082F7600B67CA5 /* NotesTextProcessor.swift */,
 				F226C3A22C08304000B67CA5 /* UIColor+.swift */,
-				F226C3A42C08326300B67CA5 /* UIFont.swift */,
+				F226C3A42C08326300B67CA5 /* UIFont+.swift */,
 				F226C3A72C0832AF00B67CA5 /* String+.swift */,
 				F226C3A92C0833BA00B67CA5 /* TextStorageProcessor.swift */,
-				F226C3AB2C08344D00B67CA5 /* UITextView.swift */,
+				F226C3AB2C08344D00B67CA5 /* UITextView+.swift */,
 				F226C3AD2C0834CB00B67CA5 /* Colors.swift */,
 				F226C3AF2C0834F300B67CA5 /* Note.swift */,
 				F226C3B12C08351100B67CA5 /* NoteType.swift */,
 				F226C3B32C08358200B67CA5 /* NoteContainer.swift */,
 				F226C3C02C08921F00B67CA5 /* TextFormatter.swift */,
-				F29333802C08ADAD00DC31F2 /* NSTextStorage.swift */,
+				F29333802C08ADAD00DC31F2 /* NSTextStorage+.swift */,
 			);
 			path = FSNote;
 			sourceTree = "<group>";
@@ -1155,7 +1155,7 @@
 				9D87B0AC2934D3D00072B307 /* TaskDataStore.swift in Sources */,
 				9D92EFEA293B18A300061967 /* AlertDemoView.swift in Sources */,
 				9DA6059B291F4EE600EFFA1D /* ListSampleView.swift in Sources */,
-				F29333812C08ADAD00DC31F2 /* NSTextStorage.swift in Sources */,
+				F29333812C08ADAD00DC31F2 /* NSTextStorage+.swift in Sources */,
 				F226C3A12C082F7600B67CA5 /* NotesTextProcessor.swift in Sources */,
 				9DB8A3972937AED2003DAC4A /* ScannerDemoView.swift in Sources */,
 				9DE65CC02917E94D00804F13 /* ImmersiveView.swift in Sources */,
@@ -1186,7 +1186,7 @@
 				9D643703292E76980074261A /* MailView.swift in Sources */,
 				9DE65CC22917F38800804F13 /* KeyboardAwareDemoView.swift in Sources */,
 				F226C3922C071AA100B67CA5 /* DropdownDemoView2.swift in Sources */,
-				F226C3A52C08326300B67CA5 /* UIFont.swift in Sources */,
+				F226C3A52C08326300B67CA5 /* UIFont+.swift in Sources */,
 				F226C3822C06DD5100B67CA5 /* ImageBizDemoView.swift in Sources */,
 				9D92EFE6293B185400061967 /* BlurView.swift in Sources */,
 				9DE65CB429164C1D00804F13 /* AnimationDemoView.swift in Sources */,
@@ -1205,13 +1205,13 @@
 				F226C39D2C082EE400B67CA5 /* AttributedBox.swift in Sources */,
 				9DDD690E291BFC1500E2CB69 /* EnvironmentDemoView.swift in Sources */,
 				9DE65CB329164C1D00804F13 /* LayoutDemoView.swift in Sources */,
-				F226C39B2C082EC100B67CA5 /* NSMutableAttributedString.swift in Sources */,
+				F226C39B2C082EC100B67CA5 /* NSMutableAttributedString+.swift in Sources */,
 				9DE65C5529116DDF00804F13 /* Project.swift in Sources */,
 				9DE65CA129163F6F00804F13 /* LynnPullToRefresh.swift in Sources */,
 				F226C37F2C06D52A00B67CA5 /* CodeEditorDemoView.swift in Sources */,
 				9DDD6907291B897900E2CB69 /* KeyboardReadable.swift in Sources */,
 				9DB8A39B293847A2003DAC4A /* TextRecognition.swift in Sources */,
-				F226C3AC2C08344D00B67CA5 /* UITextView.swift in Sources */,
+				F226C3AC2C08344D00B67CA5 /* UITextView+.swift in Sources */,
 				9D4D229329102714006E0075 /* AwesomeSwift.xcdatamodeld in Sources */,
 				9DA605AE29213EC700EFFA1D /* SwipeListView.swift in Sources */,
 				9DE65CBC29164C1D00804F13 /* TabPageDemoView.swift in Sources */,
