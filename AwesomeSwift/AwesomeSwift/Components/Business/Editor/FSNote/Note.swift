@@ -207,7 +207,12 @@ public class Note: NSObject  {
 //            return false
 //        }
 //    }
-//
+
+    // TODO: 可以使用 FileManager.default.setAttributes 方法修改文件的属性信息
+    /// attributes
+    /// 一个字典，其中键包含要为path设置的属性，值包含该属性的相应值。可以设置的属性有:busy、creationDate、extensionHidden、groupOwnerAccountID、groupOwnerAccountName、hfsCreatorCode、hfsTypeCode、immutable、modificationDate、ownerAccountID、ownerAccountName、posixPermissions。您可以更改单个属性或任何属性组合;您不需要为所有属性指定键。
+    /// path
+    /// 文件或目录的路径。
 //    public func setCreationDate(date: Date) -> Bool {
 //        let attributes = [FileAttributeKey.creationDate: date]
 //

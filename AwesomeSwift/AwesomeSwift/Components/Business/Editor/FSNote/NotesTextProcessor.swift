@@ -443,6 +443,7 @@ public class NotesTextProcessor {
             })
 
             // Indent code blocks
+            // 这里指的是通过 indent 方式实现的代码块
 //            if UserDefaultsManagement.indentedCodeBlockHighlighting {
 //                let codeTextProcessor = CodeTextProcessor(textStorage: attributedString)
 //                if let codeBlockRanges = codeTextProcessor.getCodeBlockRanges() {

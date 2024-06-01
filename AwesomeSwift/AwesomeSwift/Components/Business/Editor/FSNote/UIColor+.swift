@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    
     public static let mainTheme = UIColor(red: 0.08, green: 0.60, blue: 0.85, alpha: 1.00)
 
     public static var previewColor: UIColor {

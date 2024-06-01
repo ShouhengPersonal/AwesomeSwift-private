@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension UIFont {
+    
     var isBold: Bool {
         return fontDescriptor.symbolicTraits.contains(.traitBold)
     }

@@ -15,11 +15,28 @@ import UIKit
 import AVKit
 #endif
 
+/// 这里的渲染逻辑，除了 md 的渲染，更多的是在处理 code 的渲染
 class TextStorageProcessor: NSObject, NSTextStorageDelegate {
     public var shouldForceRescan: Bool?
+    // 这个何时被赋值？
     public var lastRemoved: String?
     public var editor: EditTextView?
 
+    /**
+     `NSTextStorageDelegate` 是一个协议，定义了一些方法，允许对象作为文本存储的代理来监视和响应文本存储的变化。其中的 `textStorage(_:didProcessEditing:range:changeInLength:)` 方法允许代理对象在文本存储编辑完成后被调用。
+
+     下面是方法及其参数的含义：
+
+     - **方法名：** `textStorage(_:didProcessEditing:range:changeInLength:)`
+
+     - **参数：**
+       1. `textStorage`：被编辑的文本存储对象，即发生了编辑操作的文本存储。
+       2. `editedMask`：一个枚举值，指示发生了哪些类型的编辑。具体的编辑类型可以是 `editedCharacters`（字符编辑）或 `editedAttributes`（属性编辑）等。
+       3. `editedRange`：一个 `NSRange` 结构，表示被编辑的范围。
+       4. `delta`：一个整数，表示编辑操作导致的文本长度变化。如果是增加了文本，则为正数；如果是删除了文本，则为负数；如果没有变化，则为 0。
+
+     当文本存储对象发生编辑操作后，该方法会被调用，允许代理对象处理这些编辑操作。代理对象可以根据编辑的类型、范围以及变化的长度来执行一些自定义的操作，例如更新界面、执行文本分析、验证文本格式等。
+     */
 #if os(iOS)
     public func textStorage(
         _ textStorage: NSTextStorage,
@@ -47,6 +64,7 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
         guard let note = editor?.note, note.isMarkdown() else { return }
         guard delta != 0 || shouldForceRescan == true else { return }
 
+        // 判断哈希值是否发生了变化，note.content 是何时存储的？
 //        if note.content.string.md5 != note.cacheHash {
 //            if editedRange.length > 300000 {
 //                NotesTextProcessor.minimalHighlight(attributedString: textStorage, note: note)
@@ -69,20 +87,20 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
     }
 
     private func shouldScanСompletely(textStorage: NSTextStorage, editedRange: NSRange) -> Bool {
+        // 全文变更
         if editedRange.length == textStorage.length {
             return true
         }
 
+        // 变更的文本
         let string = textStorage.mutableString.substring(with: editedRange)
 
+        // 变更的部分是 `，代码块或者 标签
         return
             string == "`"
             || string == "`\n"
             || lastRemoved == "`"
-            || (
-                shouldForceRescan == true
-                && string.contains("```")
-            )
+            || (shouldForceRescan == true && string.contains("```"))
     }
 
     private func rescanAll(textStorage: NSTextStorage) {
@@ -94,7 +112,7 @@ class TextStorageProcessor: NSObject, NSTextStorageDelegate {
         NotesTextProcessor.highlightMarkdown(attributedString: textStorage)
         NotesTextProcessor.highlightFencedAndIndentCodeBlocks(attributedString: textStorage)
 
-//        textStorage.updateParagraphStyle()
+        textStorage.updateParagraphStyle()
     }
 
     private func rescanPartial(textStorage: NSTextStorage, delta: Int, editedRange: NSRange) {
