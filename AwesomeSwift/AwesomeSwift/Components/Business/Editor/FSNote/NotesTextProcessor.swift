@@ -156,13 +156,17 @@ public class NotesTextProcessor {
         NotesTextProcessor.codeFont = UserDefaultsManagement.codeFont
     }
 
+    /**
+        这份代码的作用是找到指定范围内的代码块（若有）
+     */
     public static func getFencedCodeBlockRange(paragraphRange: NSRange, string: NSMutableAttributedString) -> NSRange? {
         guard UserDefaultsManagement.codeBlockHighlight else { return nil }
 
+        // 通过正则表达式解析代码块的方式会不会在当文本中存在多个代码块的时候出现错误？
         let regex = try! NSRegularExpression(pattern: NotesTextProcessor._codeQuoteBlockPattern, options: [
             NSRegularExpression.Options.allowCommentsAndWhitespace,
             NSRegularExpression.Options.anchorsMatchLines
-            ])
+        ])
 
         var foundRange: NSRange? = nil
         regex.enumerateMatches(
@@ -174,13 +178,18 @@ public class NotesTextProcessor {
                     return
                 }
                 
+                /**
+                 Range.intersection(_:) 方法是用于计算两个范围的交集的方法。在 Swift 中，范围可以表示为区间（Range）类型。
+                 这个方法接受一个范围作为参数，并返回一个新的范围，表示调用者范围和传入的范围之间的交集。如果两个范围没有交集，返回的是 nil。
+                 例如，假设有两个范围 range1 和 range2，它们分别表示 [0..<5] 和 [3..<8]。调用 range1.intersection(range2) 将返回一个新的范围 [3..<5]，表示这两个范围之间的交集是从 3 到 5。
+                 如果两个范围没有交集，比如 range1 是 [0..<5]，range2 是 [6..<8]，调用 range1.intersection(range2) 将返回 nil，表示它们之间没有交集。
+                 */
                 if r.range.intersection(paragraphRange) != nil {
                     if r.range.upperBound < string.length {
                         foundRange = NSRange(location: r.range.location, length: r.range.length)
                     } else {
                         foundRange = r.range
                     }
-                    
                     stop.pointee = true
                 }
             }
@@ -189,6 +198,7 @@ public class NotesTextProcessor {
         return foundRange
     }
 
+    /** 这个好像是找內联的代码块。 */
     public static func getSpanCodeBlockRange(content: NSMutableAttributedString, range: NSRange) -> NSRange? {
         var codeSpan: NSRange?
         let paragraphRange = content.mutableString.paragraphRange(for: range)
@@ -208,6 +218,7 @@ public class NotesTextProcessor {
     public static var hl: Highlightr? = nil
     public static var backgroundHl: Highlightr? = nil
     
+    /// 这个 hl 好像只是针对 code 进行渲染
     public static func getHighlighter(backgroundThread: Bool = false) -> Highlightr? {
         if backgroundThread, let instance = self.backgroundHl {
             return instance
@@ -231,7 +242,12 @@ public class NotesTextProcessor {
         return highlightr
     }
 
-    public static func highlightCode(attributedString: NSMutableAttributedString, range: NSRange, language: String? = nil, backgroundThread: Bool = false) {
+    public static func highlightCode(
+        attributedString: NSMutableAttributedString,
+        range: NSRange,
+        language: String? = nil,
+        backgroundThread: Bool = false
+    ) {
         guard let highlighter = NotesTextProcessor.getHighlighter(backgroundThread: backgroundThread) else { return }
 
         let codeString = attributedString.mutableString.substring(with: range)
@@ -245,17 +261,21 @@ public class NotesTextProcessor {
         guard UserDefaultsManagement.codeBlocksWithSyntaxHighlighting, let code = highlighter.highlight(codeString, as: preDefinedLanguage) else { return }
 
         if (range.location + range.length) > attributedString.length { return }
-        if attributedString.length >= range.upperBound && (code.string != attributedString.mutableString.substring(with: range)) { return }
+        if attributedString.length >= range.upperBound && (code.string != attributedString.mutableString.substring(with: range)) { 
+            return
+        }
 
         let codeFont = UserDefaultsManagement.codeFont
         let codeFontBold = codeFont.codeBold()
 
+        // 这里好像是根据高亮的结果对代码文本的部分进行处理
         code.enumerateAttributes(
             in: NSMakeRange(0, code.length),
             options: [],
             using: { (attrs, locRange, stop) in
                 var fixedRange = NSMakeRange(range.location+locRange.location, locRange.length)
-                fixedRange.length = (fixedRange.location + fixedRange.length < attributedString.length) ? fixedRange.length : attributedString.length-fixedRange.location
+                fixedRange.length = (fixedRange.location + fixedRange.length < attributedString.length) 
+                    ? fixedRange.length : attributedString.length-fixedRange.location
                 fixedRange.length = (fixedRange.length >= 0) ? fixedRange.length : 0
 
                 for (key, value) in attrs {
@@ -283,6 +303,7 @@ public class NotesTextProcessor {
     
     public static var languages: [String]? = nil
     
+    /// 解析代码的语言
     public static func getLanguage(_ code: String) -> String? {
         if code.starts(with: "```") {
             let start = code.index(code.startIndex, offsetBy: 0)
@@ -323,10 +344,10 @@ public class NotesTextProcessor {
             guard let innerRange = result?.range else { return }
 
             var substring = attributedString.mutableString.substring(with: innerRange)
-//            substring = substring
-//                .replacingOccurrences(of: "[[", with: "")
-//                .replacingOccurrences(of: "]]", with: "")
-//                .trim()
+            substring = substring
+                .replacingOccurrences(of: "[[", with: "")
+                .replacingOccurrences(of: "]]", with: "")
+                .trim()
 
             guard let tag = substring.addingPercentEncoding(withAllowedCharacters: .alphanumerics) else { return }
 

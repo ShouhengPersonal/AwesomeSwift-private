@@ -15,6 +15,8 @@ import Cocoa
 #endif
 
 extension NSMutableAttributedString {
+    
+    /// 这是把图片换成 md 文本
     public func unLoadImages(note: Note? = nil) -> NSMutableAttributedString {
         var offset = 0
         let content = self.mutableCopy() as? NSMutableAttributedString
@@ -30,14 +32,11 @@ extension NSMutableAttributedString {
                 let titleKey = NSAttributedString.Key(rawValue: "co.fluder.fsnotes.image.title")
 
                 if let filePath = self.attribute(filePathKey, at: range.location, effectiveRange: nil) as? String {
-
                     path = filePath.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
                     title = self.attribute(titleKey, at: range.location, effectiveRange: nil) as? String
-                } else if let note = note,
-                    let imageData = textAttachment.fileWrapper?.regularFileContents {
+                } else if let note = note, let imageData = textAttachment.fileWrapper?.regularFileContents {
 //                    path = ImagesProcessor.writeFile(data: imageData, note: note)
-                } else if let note = note,
-                    let imageData = textAttachment.contents {
+                } else if let note = note, let imageData = textAttachment.contents {
 //                    path = ImagesProcessor.writeFile(data: imageData, note: note)
                 }
 
@@ -56,6 +55,7 @@ extension NSMutableAttributedString {
         return content!
     }
 
+    /// 这是把复选框图标换成文本
     public func unLoadCheckboxes() -> NSMutableAttributedString {
         var offset = 0
         let content = self.mutableCopy() as? NSMutableAttributedString

@@ -14,8 +14,10 @@ import Foundation
 
 //typealias Image = UIImage
 
-
+/// 主要用来处理复选框相关的逻辑
 class AttributedBox {
+    
+    /// 获取勾选的复选框文案
     public static func getChecked() -> NSMutableAttributedString? {
         let checkboxText = getCleanChecked()
         checkboxText.append(NSAttributedString(string: " "))
@@ -23,6 +25,7 @@ class AttributedBox {
         return checkboxText
     }
 
+    /// 获取未勾选的复选框文案
     public static func getUnChecked() -> NSMutableAttributedString? {
         let checkboxText = getCleanUnchecked()
         checkboxText.append(NSAttributedString(string: " "))
@@ -30,6 +33,7 @@ class AttributedBox {
         return checkboxText
     }
 
+    /// 获取未勾选的复选框
     public static func getCleanUnchecked() -> NSMutableAttributedString {
         let font = NotesTextProcessor.font
         let size = font.pointSize + font.pointSize / 2
@@ -55,6 +59,7 @@ class AttributedBox {
         return checkboxText
     }
 
+    /// 获取勾选的复选框
     public static func getCleanChecked() -> NSMutableAttributedString {
         let font = NotesTextProcessor.font
         let size = font.pointSize + font.pointSize / 2
