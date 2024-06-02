@@ -40,6 +40,13 @@ public class TextFormatter {
     private var isAutomaticDashSubstitutionEnabled: Bool = false
     
     init(textView: EditTextView, note: Note) {
+        /*
+         在 iOS 开发中，`UITextView` 是用于显示和编辑文本的控件。`selectedRange` 是 `UITextView` 的一个属性，用于表示当前选中文本的范围。该属性是一个 `NSRange` 结构体，其中包含了选中文本的起始位置和长度。
+
+         具体而言，`selectedRange.location` 表示选中文本的起始位置（以字符为单位），`selectedRange.length` 表示选中文本的长度。如果没有文本被选中，`selectedRange.length` 的值为 0。
+
+         你可以使用这个属性来获取或设置 `UITextView` 中当前选中文本的范围。
+         */
         range = textView.selectedRange
         
         #if os(OSX)
@@ -50,10 +57,17 @@ public class TextFormatter {
             }
         #else
             storage = textView.textStorage
+            /*
+             `attributedText` 是 `UITextView` 的另一个属性，用于设置富文本（即具有不同样式和属性的文本）。与普通的 `text` 属性不同，`attributedText` 接受 `NSAttributedString` 类型的对象，可以在文本中的不同部分应用不同的样式和属性，比如字体、颜色、行间距等。
+
+             通过设置 `attributedText` 属性，你可以在 `UITextView` 中显示具有丰富样式和属性的文本。这对于需要显示特定格式的文本，如带有不同颜色、字体大小或链接的文本，非常有用。
+             */
             attributedSelected = textView.attributedText
         #endif
         
+        /// 选中的文本的 NSMutableAttributedString 对象？
         self.attributedString = NSMutableAttributedString(attributedString: attributedSelected.attributedSubstring(from: range))
+        /// 选中的文本的富文本类型的范围？
         self.selectedRange = NSRange(0..<attributedString.length)
         
         self.type = note.type

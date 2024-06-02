@@ -15,6 +15,7 @@ import Highlightr
     import UIKit
 #endif
 
+/// 主要处理语法高亮
 public class NotesTextProcessor {
 #if os(OSX)
     typealias Color = NSColor

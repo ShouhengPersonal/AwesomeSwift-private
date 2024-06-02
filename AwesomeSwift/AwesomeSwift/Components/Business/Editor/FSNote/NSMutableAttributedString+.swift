@@ -14,6 +14,7 @@ import UIKit
 import Cocoa
 #endif
 
+/// 主要用来进行富文本到 md 的转换
 extension NSMutableAttributedString {
     
     /// 这是把图片换成 md 文本
