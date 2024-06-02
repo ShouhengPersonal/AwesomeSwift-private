@@ -93,7 +93,7 @@ public class TextFormatter {
     func bold() {
         if note.isMarkdown() {
 
-            // UnBold if not selected
+            // 没有选中任何文本的时候走 unbold 的逻辑
             if range.length == 0 {
                 var resultFound = false
                 let string = getAttributedString().string
@@ -114,12 +114,13 @@ public class TextFormatter {
                 }
             }
 
-            // UnBold selected
+            // 如果选中的文本中包含加粗字符，则走 unbold 的逻辑
             if attributedString.string.contains("**") || attributedString.string.contains("__") {
                 unBold(attributedString: attributedString, range: range)
                 return
             }
 
+            // 走 bold 的逻辑
             var selectRange = NSMakeRange(range.location + 2, 0)
             let string = attributedString.string
             let length = string.count
