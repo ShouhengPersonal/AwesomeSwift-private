@@ -757,6 +757,7 @@ public class TextFormatter {
 //        #endif
     }
 
+    // TODO: 换行的时候会调用下面的方法，主要用来处理比如列表等的处理
     public func newLine() {
         guard let currentParagraphRange = self.getParagraphRange() else { return }
 
