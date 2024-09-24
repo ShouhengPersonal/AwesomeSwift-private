@@ -147,6 +147,7 @@
 		F226C3BD2C0853DC00B67CA5 /* CustomEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3BC2C0853DC00B67CA5 /* CustomEditorDemoView.swift */; };
 		F226C3BF2C08542700B67CA5 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3BE2C08542700B67CA5 /* CustomTextView.swift */; };
 		F226C3C12C08921F00B67CA5 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3C02C08921F00B67CA5 /* TextFormatter.swift */; };
+		F23455012CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23455002CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift */; };
 		F25B3AD92C1AA6D00093FB63 /* DialogDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B3AD82C1AA6D00093FB63 /* DialogDemoView.swift */; };
 		F25B3ADC2C1AA6F00093FB63 /* CustomDialogV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B3ADB2C1AA6F00093FB63 /* CustomDialogV2.swift */; };
 		F25B3ADE2C1AA91B0093FB63 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B3ADD2C1AA91B0093FB63 /* CustomDialog.swift */; };
@@ -344,6 +345,7 @@
 		F226C3BC2C0853DC00B67CA5 /* CustomEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEditorDemoView.swift; sourceTree = "<group>"; };
 		F226C3BE2C08542700B67CA5 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		F226C3C02C08921F00B67CA5 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		F23455002CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMarkdownDemoView.swift; sourceTree = "<group>"; };
 		F25B3AD82C1AA6D00093FB63 /* DialogDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogDemoView.swift; sourceTree = "<group>"; };
 		F25B3ADB2C1AA6F00093FB63 /* CustomDialogV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogV2.swift; sourceTree = "<group>"; };
 		F25B3ADD2C1AA91B0093FB63 /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
@@ -865,6 +867,7 @@
 				F226C3792C06196400B67CA5 /* HighlightrDemoView.swift */,
 				F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */,
 				F226C3B52C08371900B67CA5 /* FSNoteDemoView.swift */,
+				F23455002CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -1227,6 +1230,7 @@
 				F226C39B2C082EC100B67CA5 /* NSMutableAttributedString+.swift in Sources */,
 				9DE65C5529116DDF00804F13 /* Project.swift in Sources */,
 				9DE65CA129163F6F00804F13 /* LynnPullToRefresh.swift in Sources */,
+				F23455012CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift in Sources */,
 				F226C37F2C06D52A00B67CA5 /* CodeEditorDemoView.swift in Sources */,
 				9DDD6907291B897900E2CB69 /* KeyboardReadable.swift in Sources */,
 				9DB8A39B293847A2003DAC4A /* TextRecognition.swift in Sources */,

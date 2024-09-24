@@ -48,6 +48,7 @@ target 'AwesomeSwift' do
   pod 'CropViewController'
   
   pod 'SwiftLint', '~> 0.30.0'
+  pod 'SwiftyMarkdown'
 end
 
 #def framework_pods

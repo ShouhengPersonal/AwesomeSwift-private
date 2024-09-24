@@ -27,6 +27,7 @@ PODS:
   - SQLite.swift/standard (0.14.1)
   - SSZipArchive (2.4.3)
   - SwiftLint (0.30.1)
+  - SwiftyMarkdown (1.2.4)
   - Then (3.0.0)
 
 DEPENDENCIES:
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - SQLite.swift (~> 0.14.0)
   - SSZipArchive
   - SwiftLint (~> 0.30.0)
+  - SwiftyMarkdown
   - "Then (from `git@github.com:devxoul/Then.git`)"
 
 SPEC REPOS:
@@ -70,6 +72,7 @@ SPEC REPOS:
     - SQLite.swift
     - SSZipArchive
     - SwiftLint
+    - SwiftyMarkdown
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -111,8 +114,9 @@ SPEC CHECKSUMS:
   SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftyMarkdown: 7cdec87c6ab5cd9ea0e22ced288e889960649ba5
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 7e563aa76cd17b459dd46aba8e81b14f4a4a558a
+PODFILE CHECKSUM: f576d141d02e044a897d4d2a13e8014f76ee99b8
 
 COCOAPODS: 1.15.2

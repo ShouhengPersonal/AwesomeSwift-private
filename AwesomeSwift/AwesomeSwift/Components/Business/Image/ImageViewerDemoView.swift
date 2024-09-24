@@ -24,7 +24,7 @@ struct ImageViewerSwiftUIView: UIViewRepresentable {
     func makeUIView(context: Context) -> UIImageView {
         let imageView = UIImageView()
         imageView.setupImageViewer(urls: image_urls)
-        imageView.image = R.image.christmas_star()!
+//        imageView.image = R.image.christmas_star()!
         return imageView
     }
     
