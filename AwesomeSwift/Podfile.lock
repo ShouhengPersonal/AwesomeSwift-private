@@ -11,6 +11,7 @@ PODS:
   - JXSegmentedView (1.3.3)
   - Kingfisher (7.6.1)
   - lottie-ios (4.4.1)
+  - MarkdownKit (1.7.1)
   - MarqueeLabel (4.0.5)
   - NotificationBannerSwift (3.0.6):
     - MarqueeLabel (~> 4.0.5)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - JXSegmentedView
   - Kingfisher (= 7.6.1)
   - lottie-ios
+  - MarkdownKit
   - NotificationBannerSwift (~> 3.0.0)
   - R.swift
   - RichEditorView
@@ -62,6 +64,7 @@ SPEC REPOS:
     - JXSegmentedView
     - Kingfisher
     - lottie-ios
+    - MarkdownKit
     - MarqueeLabel
     - NotificationBannerSwift
     - R.swift
@@ -104,6 +107,7 @@ SPEC CHECKSUMS:
   JXSegmentedView: 651b60fcf705258ba9395edd53876dbd2853fb68
   Kingfisher: 93a3c6d0d551658a31e19f21747e1d15cb39d525
   lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
+  MarkdownKit: 0b15195c63cf3e39387949c4bdeccde0055e252a
   MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
   NotificationBannerSwift: 7021be2338f8f29cf424b0aca43da462bf9e2a1a
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
@@ -117,6 +121,6 @@ SPEC CHECKSUMS:
   SwiftyMarkdown: 7cdec87c6ab5cd9ea0e22ced288e889960649ba5
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: f576d141d02e044a897d4d2a13e8014f76ee99b8
+PODFILE CHECKSUM: dd966bfefad81c159b0aa63ab1177572a34138f5
 
 COCOAPODS: 1.15.2

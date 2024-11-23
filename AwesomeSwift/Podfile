@@ -47,6 +47,7 @@ target 'AwesomeSwift' do
   pod 'SKPhotoBrowser'
   pod 'CropViewController'
   
+  pod "MarkdownKit"
   pod 'SwiftLint', '~> 0.30.0'
   pod 'SwiftyMarkdown'
 end

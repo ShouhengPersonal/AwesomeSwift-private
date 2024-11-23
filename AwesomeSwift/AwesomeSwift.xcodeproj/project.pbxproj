@@ -155,6 +155,7 @@
 		F27A80852C05A0D20023CDE6 /* RichEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */; };
 		F29333812C08ADAD00DC31F2 /* NSTextStorage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29333802C08ADAD00DC31F2 /* NSTextStorage+.swift */; };
 		F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */; };
+		F2B5A79D2CF1C29900F92375 /* MarkdownKitDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5A79C2CF1C29900F92375 /* MarkdownKitDemoView.swift */; };
 		F2F898842C0448790056DB4E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898832C0448790056DB4E /* HeatmapView.swift */; };
 		F2F898862C045A9A0056DB4E /* HeatmapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */; };
 		F2F898882C047C2B0056DB4E /* DrawerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F898872C047C2B0056DB4E /* DrawerLayout.swift */; };
@@ -353,6 +354,7 @@
 		F27A80842C05A0D20023CDE6 /* RichEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichEditorDemoView.swift; sourceTree = "<group>"; };
 		F29333802C08ADAD00DC31F2 /* NSTextStorage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextStorage+.swift"; sourceTree = "<group>"; };
 		F2A105902C05B1F900EADCF6 /* MarkdownViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownViewDemo.swift; sourceTree = "<group>"; };
+		F2B5A79C2CF1C29900F92375 /* MarkdownKitDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownKitDemoView.swift; sourceTree = "<group>"; };
 		F2F898832C0448790056DB4E /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
 		F2F898852C045A9A0056DB4E /* HeatmapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapDemoView.swift; sourceTree = "<group>"; };
 		F2F898872C047C2B0056DB4E /* DrawerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerLayout.swift; sourceTree = "<group>"; };
@@ -868,6 +870,7 @@
 				F226C37E2C06D52A00B67CA5 /* CodeEditorDemoView.swift */,
 				F226C3B52C08371900B67CA5 /* FSNoteDemoView.swift */,
 				F23455002CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift */,
+				F2B5A79C2CF1C29900F92375 /* MarkdownKitDemoView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -1116,6 +1119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5A79D2CF1C29900F92375 /* MarkdownKitDemoView.swift in Sources */,
 				9DB8A3932937AB20003DAC4A /* VisionDemoView.swift in Sources */,
 				9DE65C5729116EDB00804F13 /* ProjectRow.swift in Sources */,
 				F226C38A2C07184200B67CA5 /* DropdownDemoView.swift in Sources */,
