@@ -76,6 +76,7 @@ struct SampleData {
         SampleItem(name: "切换主题", destination: ThemeDemoView()),
         SampleItem(name: "玩安卓", destination: ProjectList()),
         SampleItem(name: "AI视觉", destination: VisionDemoView()),
+        SampleItem(name: "图片处理", destination: ImageProcessView()),
     ]
     
     /// 获取示例数据

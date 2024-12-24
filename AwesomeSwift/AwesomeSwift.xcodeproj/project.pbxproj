@@ -147,6 +147,7 @@
 		F226C3BD2C0853DC00B67CA5 /* CustomEditorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3BC2C0853DC00B67CA5 /* CustomEditorDemoView.swift */; };
 		F226C3BF2C08542700B67CA5 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3BE2C08542700B67CA5 /* CustomTextView.swift */; };
 		F226C3C12C08921F00B67CA5 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226C3C02C08921F00B67CA5 /* TextFormatter.swift */; };
+		F233A92E2D1AA185005B4CB4 /* ImageProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233A92D2D1AA185005B4CB4 /* ImageProcessView.swift */; };
 		F23455012CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23455002CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift */; };
 		F25B3AD92C1AA6D00093FB63 /* DialogDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B3AD82C1AA6D00093FB63 /* DialogDemoView.swift */; };
 		F25B3ADC2C1AA6F00093FB63 /* CustomDialogV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B3ADB2C1AA6F00093FB63 /* CustomDialogV2.swift */; };
@@ -346,6 +347,7 @@
 		F226C3BC2C0853DC00B67CA5 /* CustomEditorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEditorDemoView.swift; sourceTree = "<group>"; };
 		F226C3BE2C08542700B67CA5 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		F226C3C02C08921F00B67CA5 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		F233A92D2D1AA185005B4CB4 /* ImageProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessView.swift; sourceTree = "<group>"; };
 		F23455002CA25AFD00A109F8 /* SwiftyMarkdownDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMarkdownDemoView.swift; sourceTree = "<group>"; };
 		F25B3AD82C1AA6D00093FB63 /* DialogDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogDemoView.swift; sourceTree = "<group>"; };
 		F25B3ADB2C1AA6F00093FB63 /* CustomDialogV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogV2.swift; sourceTree = "<group>"; };
@@ -689,6 +691,7 @@
 		9DDD690A291BFBBB00E2CB69 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				F233A92C2D1AA178005B4CB4 /* ImageProcess */,
 				F226C3802C06DD2300B67CA5 /* Image */,
 				F27A80812C05A05D0023CDE6 /* Editor */,
 				9DB8A3912937AB0D003DAC4A /* Vision */,
@@ -844,6 +847,14 @@
 				F226C3BE2C08542700B67CA5 /* CustomTextView.swift */,
 			);
 			path = Editor;
+			sourceTree = "<group>";
+		};
+		F233A92C2D1AA178005B4CB4 /* ImageProcess */ = {
+			isa = PBXGroup;
+			children = (
+				F233A92D2D1AA185005B4CB4 /* ImageProcessView.swift */,
+			);
+			path = ImageProcess;
 			sourceTree = "<group>";
 		};
 		F25B3ADA2C1AA6E40093FB63 /* Dialog */ = {
@@ -1197,6 +1208,7 @@
 				9DE65C7E2916056B00804F13 /* SegmentedViewDemo.swift in Sources */,
 				F2A105912C05B1F900EADCF6 /* MarkdownViewDemo.swift in Sources */,
 				9DE65CB229164C1D00804F13 /* TextFieldDemoView.swift in Sources */,
+				F233A92E2D1AA185005B4CB4 /* ImageProcessView.swift in Sources */,
 				9DE65C9429162C7100804F13 /* TextDemoView.swift in Sources */,
 				9D64370B292F8FC90074261A /* ShareDemoView.swift in Sources */,
 				9DE65CB629164C1D00804F13 /* PopupDemoView.swift in Sources */,
@@ -1458,6 +1470,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.shouheng.AwesomeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1495,6 +1509,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.shouheng.AwesomeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
