@@ -128,7 +128,7 @@ struct ImageProcessView: View {
                         .padding(.horizontal, 5)
                         .background(Color.gray.opacity(0.3))
                     Button(action: {
-                        if let cols = Int(rowText), let rows = Int(colText) {
+                        if let cols = Int(colText), let rows = Int(rowText) {
                             vLines.removeAll()
                             hLines.removeAll()
                             for row in 1..<rows {
